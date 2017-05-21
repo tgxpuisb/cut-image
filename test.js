@@ -7,6 +7,7 @@ var psd = PSD.fromFile('./test.psd')
 psd.parse()
 
 let obj = psd.tree().export()
+console.log(obj)
 
 let target = {}
 
@@ -28,7 +29,7 @@ target.pieces = obj.children.find(v => {
 
 target.pic_count = target.pieces.length
 
-fs.writeFileSync('./test.json', JSON.stringify(target, undefined, 4))
+fs.writeFileSync('./test.json', JSON.stringify(target))
 // psd.image.saveAsPng('./s.png').then(() => {})
 // let tree = psd.tree()
 
