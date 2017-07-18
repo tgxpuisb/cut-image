@@ -9,6 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sharp": "^0.17.3"
+    "md5": "^2.2.1",
+    "psd": "^3.2.0",
+    "request": "^2.81.0"
+  },
+  "engines": {
+    "node": ">= 7.6.0"
   }
 }
